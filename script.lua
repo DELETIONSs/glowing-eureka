@@ -20,9 +20,7 @@ local StarterGui = SafeGetService("StarterGui")
 local SoundService = SafeGetService("SoundService")
 local Players = SafeGetService("Players")
 local Player = game.Players.LocalPlayer
-local Root = script
-local GameScripts = require(Root.games)
-local SupportedGames = require(Root.SupportedGames)
+
 local PlaceId = game.PlaceId
 local JobId = game.JobId
 
@@ -90,4 +88,5 @@ if SupportedGames[placeId] then
 else
     warn("[Loader] Game not supported. PlaceId:", placeId)
 end
+
 
