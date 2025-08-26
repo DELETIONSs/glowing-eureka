@@ -41,7 +41,7 @@ local function LoadSupportedGames()
 
     -- If not found, try pulling from web
     if not jsonData then
-        local url = "https://raw.githubusercontent.com/YourName/YourRepo/main/SupportedGames.json"
+        local url = "https://raw.githubusercontent.com/DELETIONSs/glowing-eureka/refs/heads/main/SupportedGames.json"
         local success, result = pcall(function()
             return game:HttpGet(url)
         end)
@@ -90,3 +90,4 @@ if SupportedGames[placeId] then
 else
     warn("[Loader] Game not supported. PlaceId:", placeId)
 end
+
